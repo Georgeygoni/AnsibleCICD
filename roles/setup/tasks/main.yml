@@ -19,14 +19,14 @@
   become: yes
   apt: 
     name: "nodejs"
-    state: latest
+    state: next
     update_cache: yes 
   
 - name: "install npm"
   become: yes
   apt: 
     name: "npm"
-    state: latest
+    state: next
     update_cache: yes 
 
 
