@@ -15,28 +15,19 @@
   apt:
     autoremove: yes
 
-- name: "install nodejs"
+- name: "install dependencies."
   become: yes
   apt:
-    name: nodejs
+    name: ["nodejs", "npm"]
     state: latest
     update_cache: yes
-
-
-- name: "install npm"
-  become: yes
-  apt:
-    name: npm
-    state: latest
-    update_cache: yes
-
-
 
 - name: "install pm2"
   become: yes
   npm:
     name: pm2
     global: yes
+    production: yes
     state: present
 
 - name: Creates directory
