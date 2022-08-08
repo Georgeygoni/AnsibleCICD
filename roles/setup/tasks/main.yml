@@ -36,6 +36,7 @@
   become: yes
   npm:
     name: pm2
+    global: yes
     state: present
 
 - name: Creates directory
