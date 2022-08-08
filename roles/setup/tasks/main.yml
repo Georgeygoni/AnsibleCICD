@@ -31,14 +31,6 @@
     update_cache: yes
 
 
-
-- name: "install pm2"
-  become: yes
-  npm:
-    name: pm2
-    path: ~/web
-    state: present
-
 - name: Creates directory
   file:
     path: ~/web
