@@ -18,15 +18,15 @@
 - name: "install nodejs"
   become: yes
   apt: 
-    name: nodejs=16.9.0
-    state: present
+    name: nodejs
+    state: latest
     update_cache: yes 
   
 - name: "install npm"
   become: yes
   apt: 
-    name: npm=7.0.0
-    state: present
+    name: npm
+    state: latest
     update_cache: yes 
 
 
