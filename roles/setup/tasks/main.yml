@@ -18,7 +18,7 @@
 - name: "install nodejs"
   become: yes
   apt: 
-    name: nodejs=10.0.0
+    name: nodejs=16.9.0
     state: present
     update_cache: yes 
   
