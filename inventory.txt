@@ -1,4 +1,2 @@
 [all]
-ec2-3-222-115-92.compute-1.amazonaws.com
-
-
+44.204.116.166
